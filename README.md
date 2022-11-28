@@ -3,7 +3,7 @@ Let's get acquainted, my name is Sergei
 
 💼 About me:
 - 4 years in digital products and projects, working with 20 teams
-- Senior User Acquisition Manager at Playrix
+- Lead User Acquisition Manager at Playrix
 - Co-founder Emplay.ai - game-based AI-powered recruitment solution
 - I love to study and learn something new, solve complex problems, ask the right questions, search for the root of the problem and experiments
 
