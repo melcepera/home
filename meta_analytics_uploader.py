@@ -18,6 +18,10 @@ from urllib.parse import urljoin
 import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
+from dotenv import load_dotenv
+
+# Загрузка переменных окружения из .env файла
+load_dotenv()
 
 
 # Настройка логирования
@@ -51,8 +55,9 @@ class Config:
             raise ValueError("META_ACCESS_TOKEN не установлен")
         if not self.business_id:
             raise ValueError("META_BUSINESS_ID не установлен")
+        # Dataset ID теперь опциональный - будет проверяться при загрузке данных
         if not self.dataset_id:
-            raise ValueError("META_DATASET_ID не установлен")
+            logger.warning("META_DATASET_ID не установлен - загрузка данных будет недоступна")
 
 
 class MetaAPIClient:
